@@ -47,13 +47,14 @@ const Trending = () => {
             <div className="flex space-x-6 transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 230}px)` }}>
                 <div className="flex space-x-6">
                     {
-                        categories.map((category, index) => (   
-                            <div key={index} className={`${category.bgClass} w-[230px] h-[140px] rounded-lg flex flex-col justify-center items-center shadow-sm`}>
-                                <Image 
-                                    width={100} height={100} quality={100}
-                                    src={category.image} alt={category.name} className="w-10 h-10 mb-2" />
-                                <p className="text-sm font-medium text-gray-800">{category.name}</p>
-                                <p className="text-xs text-gray-500">{category.items} Items</p>
+                        categories.map((category, index) => (
+                            <div key={index} className={`${category.bgClass} w-[230px] h-[140px] rounded-lg flex flex-col justify-center items-center shadow-sm view`}>
+                                    <div className="sm:absolute card-hover sm:w-[240px] sm:h-[50px] sm:bg-cover sm:bg-center sm:opacity-50"></div>
+                                    <Image 
+                                        width={100} height={100} quality={100}
+                                        src={category.image} alt={category.name} className="w-10 h-10 mb-2 z-10" />
+                                    <p className="text-sm font-medium text-gray-800 z-10">{category.name}</p>
+                                    <p className="text-xs text-gray-500 z-10">{category.items} Items</p>
                             </div>
                         ))
                     }

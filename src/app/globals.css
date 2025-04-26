@@ -55,3 +55,34 @@
   letter-spacing: 5%;
   text-transform: uppercase;
 }
+
+
+/* Card dasar */
+.card-hover { 
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Transisi yang halus saat hover */
+}
+
+/* Gambar latar belakang yang muncul pada hover */
+.card-hover:hover {
+  height: 200px;
+  background-image: url('/images/bg-image.jpg'); /* Path gambar */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.view:hover {
+  height: 200px;
+  transition: all 0.3s ease;
+}
+
+.landing-hover:hover {
+  background-image: url('/images/bg-image.jpg'); /* Path gambar */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}

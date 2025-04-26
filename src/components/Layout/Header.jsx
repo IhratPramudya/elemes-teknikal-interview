@@ -47,7 +47,7 @@ const Header = () => {
             </div>
 
             <div className="hidden sm:flex sm:ml-70 sm:gap-[32px]">
-                <span className="absolute w-[36px] h-[19px] top-[22px] left-[723px] rounded-[8px] bg-[#E7462D] flex items-center justify-center">Hot</span>
+                <span className="sm:absolute sm:w-[36px] sm:h-[19px] sm:top-[22px] sm:left-[580px] sm:rounded-[8px] sm:bg-[#E7462D] sm:flex sm:items-center sm:justify-center">Hot</span>
                 {
                     menuItems.map((item, key) => (
                         <Link className="text-gray-600 hover:text-blue-600" key={item.id} href={item.url}>

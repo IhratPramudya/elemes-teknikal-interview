@@ -1,6 +1,7 @@
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Landing from "./Landing";
+import Navigation from "./Navigation";
 import Trending from "./Trending";
 
 const HomeScreen = () => {
@@ -10,6 +11,7 @@ const HomeScreen = () => {
             <Trending />
             <Landing />
             <Footer />
+            <Navigation />
         </div>
     )
 }
