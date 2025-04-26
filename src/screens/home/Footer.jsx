@@ -14,39 +14,40 @@ const Footer = () => {
                     <div className="w-[300px] h-[127px] mt-12 ml-16 space-y-10 flex-col items-center justify-center mx-auto text-custom-footer">
                         <h2 className="text-xl font-semibold mb-4">Categories</h2>
                         <ul className="space-y-2">
-                            <li><Link href="#" className="hover:text-green-800 ">Pizza</Link></li>
-                            <li><Link href="#" className="hover:text-green-800">Cupcake</Link></li>
-                            <li><Link href="#" className="hover:text-green-800">Kebab</Link></li>
-                            <li><Link href="#" className="hover:text-green-800">Salmon</Link></li>
-                            <li><Link href="#" className="hover:text-green-800">Doughnut</Link></li>
+                            <li><Link href="#" className="hover:text-[#8BAC3E] ">Pizza</Link></li>
+                            <li><Link href="#" className="hover:text-[#8BAC3E]">Cupcake</Link></li>
+                            <li><Link href="#" className="hover:text-[#8BAC3E]">Kebab</Link></li>
+                            <li><Link href="#" className="hover:text-[#8BAC3E]">Salmon</Link></li>
+                            <li><Link href="#" className="hover:text-[#8BAC3E]">Doughnut</Link></li>
                         </ul>
                     </div>
                     <div className='w-[300px] h-[127px] mt-12 space-y-10 flex-col items-center justify-center mx-auto text-custom-footer'>
                         <h2 className="text-xl font-semibold mb-4">About Us</h2>
                         <ul className="space-y-2">
-                            <li><Link href="#" className="hover:text-green-800">About Us</Link></li>
-                            <li><Link href="#" className="hover:text-green-800">FAQ</Link></li>
-                            <li><Link href="#" className="hover:text-green-800">Report Problem</Link></li>
+                            <li><Link href="#" className="hover:text-[#8BAC3E]">About Us</Link></li>
+                            <li><Link href="#" className="hover:text-[#8BAC3E]">FAQ</Link></li>
+                            <li><Link href="#" className="hover:text-[#8BAC3E]">Report Problem</Link></li>
                         </ul>
                     </div>
                     <div className='w-[300px] h-[127px] mt-12 mr-5 space-y-10 flex-col items-center justify-center mx-auto text-custom-footer'>
                             <h2 className="text-xl font-semibold mb-4">Newsletter</h2>
                             <p className=" mb-4">Get now free 50% discount for all products on your first order</p>
-                            <div className="flex items-center space-x-2">
-                                <input type="email" placeholder="Your email address" className="p-2 border border-green-500 rounded-md flex-grow" />
-                                <button className="bg-green-500 text-white px-4 py-2 rounded-md">SEND</button>
+                            <div className="flex items-center">
+                                <input type="email" placeholder="Your email address" className="p-2 border border-black rounded-l-md flex-grow" />
+                                <button className="bg-[#8BAC3E] text-white px-4 py-2 rounded-r-md">SEND</button>
                             </div>
                             <div className="mt-4">
                                     <p className="flex items-center space-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#8BAC3E]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                     </svg>
                                         <span>elemesid@gmail.com</span>
                                     </p>
                                     <p className="flex items-center space-x-2 mt-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79V15a2 2 0 01-2 2h-2.5a7.5 7.5 0 10-15 0h-2.5a2 2 0 01-2-2v-2.21a7.5 7.5 0 11-1.75 0V12a2 2 0 012-2h2.5a7.5 7.5 0 1015 0h2.5a2 2 0 012 2v2.79" />
-                                        </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#8BAC3E]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                    </svg>
+
                                         <span>0888 1111 2222</span>
                                     </p>
                     </div>
