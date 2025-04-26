@@ -5,7 +5,12 @@
     @apply text-white pt-[10px] pr-[18px] pb-[10px] pl-[18px] rounded-[100px] w-[147] h-[42px] gap-[10px] flex items-center;
   }
 
+  .heading__style{
+    @apply font-medium text-[48px] leading-[64px] tracking-[0%] text-[#8BAC3E] sm:font-medium sm:text-[64px] sm:leading-[64px] sm:tracking-[0%] sm:text-[#8BAC3E]
+  }
 }
+
+
 
 /* styles/globals.css */
 .hero-background::before {
@@ -23,7 +28,6 @@
 }
 
 
-
 .text-custom {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -34,14 +38,6 @@
   align-items: center;
 }
 
-.heading-custom {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: 0%;
-  align-items: center;
-}
 
 .text-custom-footer {
   font-family: Rubik;

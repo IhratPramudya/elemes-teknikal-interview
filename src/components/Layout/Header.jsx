@@ -34,7 +34,7 @@ const Header = () => {
 
 
     return (
-        <nav className="flex justify-between items-center p-4 bg-white shadow-md max-w-[1440px] max-h-[96px]">
+        <nav className="w-full h-[89px] flex justify-center items-center  sm:flex sm:justify-between sm:items-center sm:p-4 bg-white shadow-md sm:w-[1440px] sm:h-[96px]">
 
             <div className="flex items-center space-x-2">
                 <Image
@@ -43,10 +43,10 @@ const Header = () => {
                     width={300}
                     height={100}
                     quality={100}
-                    className="w-[207px] h-[50px] absolute top-[19px] left-[116px] " />
+                    className="w-[150px] h-[36px] absolute top-[25px] left-[33px] sm:w-[207px] sm:h-[50px] sm:absolute sm:top-[19px] sm:left-[116px]" />
             </div>
 
-            <div className="flex ml-70 gap-[32px]">
+            <div className="hidden sm:flex sm:ml-70 sm:gap-[32px]">
                 <span className="absolute w-[36px] h-[19px] top-[22px] left-[723px] rounded-[8px] bg-[#E7462D] flex items-center justify-center">Hot</span>
                 {
                     menuItems.map((item, key) => (
@@ -57,8 +57,8 @@ const Header = () => {
                 }
             </div>
 
-            <div className="flex gap-[24px] items-center space-x-4 w-[300px] h-[42px]  top-[25px]">
-                <button className="w-[44px] h-[22px]">Masuk</button>
+            <div className="w-[147px] h-[42px] ml-40 text-custom-sm flex justify-center items-center rounded-full pt-[10px] pr-[18px] pb-[10px] pl-[18px] sm:flex sm:gap-[24px] sm:items-center sm:space-x-4 sm:w-[300px] sm:h-[42px]  sm:top-[25px] sm:mr-[100px]">
+                <button className="hidden sm:flex sm:w-[44px] sm:h-[22px]">Masuk</button>
                 <Button className="bg-[#8BAC3E]">
                     <span className="text-custom">Daftar Sekarang</span>
                 </Button>

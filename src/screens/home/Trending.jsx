@@ -38,11 +38,11 @@ const Trending = () => {
 
     return (
     <section className="w-full px-10 py-10 mt-130 bg-white">
-        <div className="mb-10 ml-20">
-            <h2 className="text-2xl font-bold text-gray-900">Browser Our Category</h2>
-            <p className="text-lg font-semibold text-lime-600">Receipt</p>
+        <div className="ml-[-10] mb-5 sm:mb-10 sm:ml-20">
+            <h2 className="text-sm sm:text-2xl font-bold text-gray-900">Browser Our Category</h2>
+            <p className="text-sm sm:text-lg font-semibold text-lime-600">Receipt</p>
         </div>
-        <div className="w-[1,333px] h-[573px] ml-20">
+        <div className="w-[1,333px] h-[573px] sm:ml-20 overflow-x-hidden">
 
             <div className="flex space-x-6 transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 230}px)` }}>
                 <div className="flex space-x-6">
