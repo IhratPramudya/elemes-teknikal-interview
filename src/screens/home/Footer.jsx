@@ -3,7 +3,7 @@ import Link from 'next/link'; // Pastikan Link diimpor
 
 const Footer = () => {
   return (
-    <section className="w-[1239px] h-[423px] mx-20 mt-100">
+    <section className="hidden sm:block sm:w-[1239px] sm:h-[423px] sm:mx-20 sm:mt-100">
         <div className='bg-[#F9FFF6] "flex items-center justify-center w-[1239px] h-[359px] rounded-[20px] mx-auto"'>
             <div className="flex justify-center items-center">
                     <div className="w-[335px] h-[127px] mt-12 ml-5 space-y-10 flex-col items-center justify-center mx-auto]">

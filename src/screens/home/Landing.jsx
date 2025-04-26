@@ -11,16 +11,16 @@ const Landing = () => {
         { name: 'Kathi kebab', category: "Kebab", rating: 4, image: '/images/landing/donat-unicorn.png', bgClass: 'bg-yellow-200' },
     ]
   return (
-    <section className="w-[1440px] h-[1039px] bg-white mt-[-200]">
-        <div className="m-x-auto max-w-[1,333px] max-h-[573px]">
-            <div className="mb-10 ml-30">
-                    <h2 className="text-2xl font-bold text-gray-900">Browser Our Trending</h2>
-                    <p className="text-lg font-semibold text-lime-600">Receipt</p>
+    <section className="w-full mt-[-300] sm:w-[1440px] sm:h-[1039px] bg-white sm:mt-[-200]">
+        <div className="ml-12 sm:ml-0 sm:m-x-auto sm:w-[1,333px] sm:h-[573px]">
+            <div className="ml-[-10] mb-5 sm:mb-10 sm:ml-30">
+                    <h2 className="text-sm sm:text-2xl font-bold text-gray-900">Browser Our Trending</h2>
+                    <p className="text-sm sm:text-lg font-semibold text-lime-600">Receipt</p>
             </div>
-            <div className="grid grid-cols-3 gap-5 ml-30">
+            <div className="grid grid-cols-1 gap-4 ml-[-3] sm:grid sm:grid-cols-3 sm:gap-5 sm:ml-30">
                 {
                     trendingItems.map((item, index) => (
-                        <div key={index} className={`${item.bgClass} p-4 w-[287.5px] h-[306px] rounded-[17px]`}>
+                        <div key={index} className={`${item.bgClass} rounded-[17px] p-4 sm:w-[287.5px] sm:h-[306px] sm:rounded-[17px]`}>
                             <div className="w-[118.15] h-[120px] object-contain mb-4">
                                 <img      
                                 width={139} height={139} quality={100}
