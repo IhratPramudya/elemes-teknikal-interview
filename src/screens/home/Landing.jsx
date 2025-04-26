@@ -17,7 +17,7 @@ const Landing = () => {
                     <h2 className="text-sm sm:text-2xl font-bold text-gray-900">Browser Our Trending</h2>
                     <p className="text-sm sm:text-lg font-semibold text-lime-600">Receipt</p>
             </div>
-            <div className="grid grid-cols-1 gap-4 ml-[-20] sm:grid sm:grid-cols-3 sm:gap-5 sm:ml-30">
+            <div className="grid grid-cols-1 gap-4 mr-[50px] sm:mr-0 sm:grid sm:grid-cols-3 sm:gap-5 sm:ml-30">
                 {
                     trendingItems.map((item, index) => (
                         <div key={index} className={`${item.bgClass} rounded-[17px] p-4 sm:w-[287.5px] sm:h-[306px] sm:rounded-[17px]`}>
