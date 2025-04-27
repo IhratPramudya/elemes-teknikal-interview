@@ -1,6 +1,40 @@
 @import "tailwindcss";
 
 @layer components {
+
+  /* Navbar Components */
+  .navbar {
+    @apply w-full h-[89px] flex justify-center items-center  sm:flex sm:justify-between sm:items-center sm:p-4 bg-white shadow-md sm:w-[1440px] sm:h-[96px]
+  }
+
+  .navbar_logo-container {
+    @apply flex items-center space-x-2;
+  }
+
+  .navbar__logo {
+    @apply w-[150px] h-[36px] absolute top-[25px] left-[33px] sm:w-[207px] sm:h-[50px] sm:absolute sm:top-[19px] sm:left-[116px]
+  }
+
+  .navbar__menu-container {
+    @apply hidden sm:flex sm:ml-70 sm:gap-[32px];
+  }
+
+  .navbar__hot-label {
+    @apply sm:absolute sm:w-[36px] sm:h-[19px] sm:top-[22px] sm:left-[580px] sm:rounded-[8px] sm:bg-[#E7462D] sm:flex sm:items-center sm:justify-center
+  }
+
+  .navbar__menu-item {
+    @apply text-gray-600 hover:text-blue-600
+  }
+
+
+  .navbar__login-button {
+    @apply hidden sm:flex sm:w-[44px] sm:h-[22px];
+  }
+
+
+
+
   .custom-btn {
     @apply text-white pt-[10px] pr-[18px] pb-[10px] pl-[18px] rounded-[100px] w-[147] h-[42px] gap-[10px] flex items-center;
   }
