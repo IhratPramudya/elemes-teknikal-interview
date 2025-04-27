@@ -7,6 +7,9 @@ yang tampil dengan interaksi visual antar user untuk menyediakan nuansa positif 
 - Fitur 1: Menampilkan Beberapa makanan dengan rating tinggi menggunakan fitur rekomendasi.
 - Fitur 2: Mencari Kategori makanan dari berbagai jenis untuk mendapatkan makanan dengan slera yang diginkan.
 
+### **Link Aplikasi**
+- Vercel-> https://elemes-teknikal-ihrat-pramudya-crso.vercel.app/
+
 ---
 
 ## **Prasyarat**
