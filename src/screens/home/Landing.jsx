@@ -1,19 +1,37 @@
+"use client"
+
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import { useState } from "react";
 
 
 const Landing = () => {
-    const trendingItems = [
+
+    const [showAll, setShowAll] = useState(false);
+
+    const allData = [
         { name: 'Pizza Paperoni', category: "Pizza", rating: 4, image: '/images/landing/pizza-paperoni.png', bgClass: 'bg-[#E6F3F5]' },
         { name: 'Pizza Meat', category: "Pizza", rating: 4, image: '/images/landing/pizza-meat.png', bgClass: 'bg-[#E6F3F5]' },
         { name: 'Doner Kebab', category: "Kebab", rating: 4, image: '/images/landing/doner-kebab.png', bgClass: 'bg-[#EAEEFA]' },
         { name: 'Salmon Roll', category: "Salmon", rating: 4, image: '/images/landing/pizza-paperoni.png', bgClass: 'bg-[#F9EEF3]' },
         { name: 'Cupcake Choco', category: "Cupcake", rating: 4, image: '/images/landing/cupcake-coco.png', bgClass: 'bg-[#F0FEEB]' },
         { name: 'Doughnut Milk', category: "Doughnut", rating: 4, image: '/images/landing/donat-unicorn.png', bgClass: 'bg-[#F3F7D9]' },
+    ]
+    
+    const initialData = [
         { name: 'Doughnut Unicorn', category: "Doughnut", rating: 4, image: '/images/landing/donat-unicorn.png', bgClass: 'bg-[#F3F7D9]' },
         { name: 'Kathi kebab', category: "Kebab", rating: 4, image: '/images/landing/donat-unicorn.png', bgClass: 'bg-[#EAEEFA]' },
     ]
-  return (
+
+    const dataToDisplay = showAll ? allData : initialData;
+
+
+    // Fungsi untuk menangani klik pada tombol
+    const handleShowAllClick = () => {
+    setShowAll(true);
+    };
+
+    return (
     <section className="w-full mt-[-300] sm:w-[1440px] sm:h-[1039px] bg-white sm:mt-[-200]">
         <div className="ml-12 sm:ml-0 sm:m-x-auto sm:w-[1,333px] sm:h-[573px]">
             <div className="ml-[-10] mb-5 sm:mb-10 sm:ml-30">
@@ -22,7 +40,7 @@ const Landing = () => {
             </div>
             <div className="grid grid-cols-1 gap-4 mr-[50px] sm:mr-0 sm:grid sm:grid-cols-4 sm:gap-5 sm:ml-30">
                 {
-                    trendingItems.map((item, index) => (
+                    dataToDisplay.map((item, index) => (
                         <div key={index} className={`${item.bgClass} rounded-[17px] p-4 sm:w-[287.5px] sm:h-[306px] sm:rounded-[17px] view-card`}>
                             <div className="sm:absolute landing-hover sm:w-[287.5px] sm:h-[306px] sm:bg-cover sm:bg-center sm:opacity-50"></div>
                             <div className="w-[118.15] h-[120px] object-contain mb-4">
@@ -39,8 +57,8 @@ const Landing = () => {
                     ))
                 }
             </div>
-            <div className="hidden sm:block sm:w-[160px] sm:h-[50px] sm:absolute sm:top-[2000px] sm:left-[640px] sm:rounded-full">
-                   <Button className="bg-[#8BAC3E]">
+            <div className="hidden sm:block sm:w-[160px] sm:mt-10 sm:mx-auto sm:h-[50px] sm:rounded-full">
+                   <Button className="bg-[#8BAC3E]" onClick={handleShowAllClick}>
                         <span className="text-custom text-center">ALL Receipt</span>
                     </Button>
             </div>
