@@ -107,25 +107,38 @@ Sebutkan teknologi yang digunakan dalam proyek ini.
     2. Salin URL repositori GitHub Anda (misalnya https://github.com/username/my-project.git).
 
     3. Ketikkan perintah berikut untuk menambahkan remote:
-
     ```bash
     git remote add origin https://github.com/username/my-project.git
     ```
-    5. Menambahkan File ke Staging Area Setelah Git terinisialisasi dan remote repository ditambahkan, Anda perlu menambahkan file proyek Anda ke staging area agar Git tahu file mana yang akan di-commit.
+    Menambahkan File ke Staging Area Setelah Git terinisialisasi dan remote repository ditambahkan, Anda perlu menambahkan file proyek Anda ke staging area agar Git tahu file mana yang akan di-commit:
     ```bash
     git add .
     ```
 
-    6. Commit Perubahan Setelah menambahkan file ke staging area, Anda perlu melakukan commit untuk menyimpan perubahan tersebut di repositori lokal Anda.
-
+    6. Commit Perubahan Setelah menambahkan file ke staging area, Anda perlu melakukan commit untuk menyimpan perubahan tersebut di repositori lokal Anda
        ```bash
-    git commit -m "Initial commit"
+        git commit -m "Initial commit"
     ```
 
     7. Mengirim (Push) Perubahan ke GitHub Sekarang, Anda siap untuk mengirim perubahan yang telah di-commit ke GitHub.
-
        ```bash
     git push -u origin main
     ```
 
     8. Memverifikasi Perubahan di GitHub Setelah melakukan push, buka repositori GitHub Anda, dan Anda akan melihat file proyek Anda sudah ada di sana.
+
+    # Penggunaan Git di Lokal Komputer
+
+2. Buat Nama Project di heroku sesuai dari nama aplikasi:
+
+![Gambar Demo](assets/images/create.png)
+
+3. Setelah itu tautkan Github repository dengan nama yang sesuai dari repository yang ada
+
+![Gambar Demo](assets/images/github.png)
+
+4. Kemuidan memilih brach master untuk proses deploy
+
+![Gambar Demo](assets/images/branch.png)
+
+5. Dan Aplikasi Kita sudah bisa meluncur dan digunakan jutaan orang
