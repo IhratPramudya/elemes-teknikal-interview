@@ -61,7 +61,7 @@ Deskripsikan bagaimana cara menggunakan aplikasi atau program ini setelah instal
 Contoh penggunaan atau demonstrasi aplikasi:
 
 1. **Buka aplikasi:** Di browser Anda, buka alamat lokal atau port yang sesuai seperti `http://localhost:3000`.
-2. **Langkah-langkah penggunaannya:** Cara melihat responsive aplikasi web yaitu pertama.
+2. **Langkah-langkah penggunaannya:** Cara melihat responsive aplikasi web yaitu pertama klik kanan dan memilih inspect.
 
 ### **U**
 ![Demo](assets/images/Inspect.png)
@@ -90,4 +90,42 @@ Sebutkan teknologi yang digunakan dalam proyek ini.
 1. Tambahkan Script -p $PORT dan  "heroku-postbuild" di dalam package-json.
 2. Lihat seprti gambar di bawah ini:
 
-![Gambar Demo](assets/images/demo-image.png)
+![Gambar Demo](assets/images/package.png)
+
+3. kemudian buat repository Github dengan nama yang diginkan kemudian tekan tombol "create repository"
+
+![Gambar Demo](assets/images/package.png)
+
+4. Lanjutkan dengan langkah penggunaan git di lokal komputer jika git sudah terpasang di lokal komputer
+
+**Penggunaan git dilokal komputer:**
+
+    1. Inisialisasi Git dalam folder proyek lokal Anda **git**:
+    ```bash
+    git init
+    ```
+    2. Salin URL repositori GitHub Anda (misalnya https://github.com/username/my-project.git).
+
+    3. Ketikkan perintah berikut untuk menambahkan remote:
+
+    ```bash
+    git remote add origin https://github.com/username/my-project.git
+    ```
+    5. Menambahkan File ke Staging Area Setelah Git terinisialisasi dan remote repository ditambahkan, Anda perlu menambahkan file proyek Anda ke staging area agar Git tahu file mana yang akan di-commit.
+    ```bash
+    git add .
+    ```
+
+    6. Commit Perubahan Setelah menambahkan file ke staging area, Anda perlu melakukan commit untuk menyimpan perubahan tersebut di repositori lokal Anda.
+
+       ```bash
+    git commit -m "Initial commit"
+    ```
+
+    7. Mengirim (Push) Perubahan ke GitHub Sekarang, Anda siap untuk mengirim perubahan yang telah di-commit ke GitHub.
+
+       ```bash
+    git push -u origin main
+    ```
+
+    8. Memverifikasi Perubahan di GitHub Setelah melakukan push, buka repositori GitHub Anda, dan Anda akan melihat file proyek Anda sudah ada di sana.

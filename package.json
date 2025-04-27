@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "lint": "next lint",
-    "heroku"
+    "heroku-postbuild": "npm run build" 
   },
   "dependencies": {
     "clsx": "^2.1.1",
