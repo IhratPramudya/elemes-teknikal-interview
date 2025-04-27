@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Elemes-Food
 
-## Getting Started
+Aplikasi elemes-food rating makanan menyediakan tampilan interaktif dengan beberapa warna 
+yang tampil dengan interaksi visual antar user untuk menyediakan nuansa positif design.
 
-First, run the development server:
+### **Fitur Utama:**
+- Fitur 1: Menampilkan Beberapa makanan dengan rating tinggi menggunakan fitur rekomendasi.
+- Fitur 2: Mencari Kategori makanan dari berbagai jenis untuk mendapatkan makanan dengan slera yang diginkan.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Prasyarat**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Sebelum menjalankan proyek ini, pastikan Anda sudah menginstal perangkat berikut:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Node.js** - [Instalasi Node.js](https://nodejs.org/)
+- **NPM** - (NPM sudah termasuk dalam instalasi Node.js)
+- **NexJs** - Jika menggunakan 
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **Instalasi**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Langkah-langkah untuk menginstal proyek ini di komputer lokal Anda:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone repositori ke mesin lokal:**
 
-## Deploy on Vercel
+    ```bash
+    git clone https://github.com/IhratPramudya/elemes-teknikal-interview.git
+    cd repository-name
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Instal dependensi:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    Jika Anda menggunakan **npm**:
+    ```bash
+    npm install
+    ```
+
+
+3. **Menjalankan Proyek:**
+
+    Setelah berhasil menginstal semua dependensi, jalankan proyek dengan perintah berikut:
+
+    Jika Anda menggunakan **npm**:
+    ```bash
+    npm start
+    ```
+
+    Jika ingin menjalankan mode development **npm**:
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## **Penggunaan**
+
+Deskripsikan bagaimana cara menggunakan aplikasi atau program ini setelah instalasi selesai.
+
+Contoh penggunaan atau demonstrasi aplikasi:
+
+1. **Buka aplikasi:** Di browser Anda, buka alamat lokal atau port yang sesuai seperti `http://localhost:3000`.
+2. **Langkah-langkah penggunaannya:** Cara melihat responsive aplikasi web yaitu pertama.
+
+### **U**
+![Demo](assets/images/Inspect.png)
+
+3. Kemudian kita buka icon berbentuk hp dan mulai memilih ukuran layar yang ingin digunakan.
+
+![Demo](assets/images/devtools.png)
+
+
+## **Teknologi yang Digunakan**
+
+Sebutkan teknologi yang digunakan dalam proyek ini.
+
+- **React.js** - Untuk membangun antarmuka pengguna.
+- **Node.js** - Untuk menjalankan backend.
+- **TailwindCSS** - Untuk styling frontend.
+- **NextJs** - Sebagai basis data.
+
+---
+
+## **Gambar**
+
+
+### **Mendeploy aplikasi elemes-food kedalam heroku**
+
+1. Tambahkan Script -p $PORT dan  "heroku-postbuild" di dalam package-json.
+2. Lihat seprti gambar di bawah ini:
+
+![Gambar Demo](assets/images/demo-image.png)
