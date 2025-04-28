@@ -2,12 +2,13 @@
 
 import Button from "@/components/ui/Button";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const Landing = () => {
 
     const [showAll, setShowAll] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const allData = [
         { name: 'Pizza Paperoni', category: "Pizza", rating: 4, image: '/images/landing/pizza-paperoni.png', bgClass: 'bg-[#E6F3F5]' },
@@ -23,13 +24,24 @@ const Landing = () => {
         { name: 'Kathi kebab', category: "Kebab", rating: 4, image: '/images/landing/donat-unicorn.png', bgClass: 'bg-[#EAEEFA]' },
     ]
 
-    const dataToDisplay = showAll ? allData : initialData;
+    const dataToDisplay = showAll || isMobile ? allData : initialData;
 
 
     // Fungsi untuk menangani klik pada tombol
     const handleShowAllClick = () => {
     setShowAll(true);
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768)
+        }
+
+        handleResize(); // Panggil pertama kali untuk mengecek ukuran layar pada saat render
+        window.addEventListener('resize', handleResize); // Menambahkan event listener untuk resize
+    
+        return () => window.removeEventListener('resize', handleResize); // Bersihkan event listener saat komponen unmount
+    })
 
     return (
     <section className="w-full mt-[-300] sm:w-[1440px] sm:h-[1039px] bg-white sm:mt-[-200]">
@@ -57,11 +69,13 @@ const Landing = () => {
                     ))
                 }
             </div>
-            <div className="hidden sm:block sm:w-[160px] sm:mt-10 sm:mx-auto sm:h-[50px] sm:rounded-full">
-                   <Button className="bg-[#8BAC3E]" onClick={handleShowAllClick}>
-                        <span className="text-custom text-center">ALL Receipt</span>
+            {!isMobile && !showAll && (
+                <div className="sm:block sm:w-[160px] sm:mt-10 sm:mx-auto sm:h-[50px] sm:rounded-full">
+                    <Button className="bg-[#8BAC3E]" onClick={handleShowAllClick}>
+                    <span className="text-custom text-center">ALL Receipt</span>
                     </Button>
-            </div>
+                </div>
+            )}
         </div>
     </section>
   );
