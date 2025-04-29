@@ -101,36 +101,79 @@ Sebutkan teknologi yang digunakan dalam proyek ini.
 
 4. Lanjutkan dengan langkah penggunaan git di lokal komputer jika git sudah terpasang di lokal komputer
 
-**Penggunaan git dilokal komputer:**
 
-    1. Inisialisasi Git dalam folder proyek lokal Anda **git**:
-    ```bash
-    git init
-    ```
-    2. Salin URL repositori GitHub Anda (misalnya https://github.com/username/my-project.git).
+# Penggunaan Git di Lokal Komputer
 
-    3. Ketikkan perintah berikut untuk menambahkan remote:
-    ```bash
-    git remote add origin https://github.com/username/my-project.git
-    ```
-    Menambahkan File ke Staging Area Setelah Git terinisialisasi dan remote repository ditambahkan, Anda perlu menambahkan file proyek Anda ke staging area agar Git tahu file mana yang akan di-commit:
-    ```bash
-    git add .
-    ```
+Berikut adalah langkah-langkah untuk **menginisialisasi Git** di proyek lokal Anda dan menghubungkannya dengan **repositori GitHub**.
 
-    6. Commit Perubahan Setelah menambahkan file ke staging area, Anda perlu melakukan commit untuk menyimpan perubahan tersebut di repositori lokal Anda
-       ```bash
-        git commit -m "Initial commit"
-    ```
+### 1. **Inisialisasi Git dalam Folder Proyek Lokal Anda**
+Untuk memulai, buka terminal di dalam folder proyek Anda, kemudian jalankan perintah berikut untuk **menginisialisasi repositori Git** di folder tersebut:
+```bash
+git init
+```
 
-    7. Mengirim (Push) Perubahan ke GitHub Sekarang, Anda siap untuk mengirim perubahan yang telah di-commit ke GitHub.
-       ```bash
-    git push -u origin main
-    ```
+### 2. **Salin URL Repositori GitHub Anda**
+Setelah repositori GitHub Anda dibuat, salin URL repositori tersebut (misalnya: `https://github.com/username/my-project.git`).
 
-    8. Memverifikasi Perubahan di GitHub Setelah melakukan push, buka repositori GitHub Anda, dan Anda akan melihat file proyek Anda sudah ada di sana.
+### 3. **Menambahkan Remote Repository**
+Kemudian, sambungkan repositori lokal Anda dengan repositori GitHub menggunakan perintah berikut:
+```bash
+git remote add origin https://github.com/username/my-project.git
+```
+Gantilah `https://github.com/username/my-project.git` dengan URL repositori GitHub Anda.
 
-    # Penggunaan Git di Lokal Komputer
+### 4. **Menambahkan File ke Staging Area**
+Setelah Git terinisialisasi dan remote repository ditambahkan, Anda perlu menambahkan file proyek Anda ke **staging area** agar Git tahu file mana yang akan di-commit:
+```bash
+git add .
+```
+Perintah ini akan menambahkan **semua file** di folder proyek ke staging area. Jika Anda hanya ingin menambahkan file tertentu, Anda dapat mengganti `.` dengan nama file, seperti:
+```bash
+git add <nama_file>
+```
+
+### 5. **Commit Perubahan**
+Setelah menambahkan file ke staging area, lakukan **commit** untuk menyimpan perubahan tersebut di repositori lokal Anda:
+```bash
+git commit -m "Initial commit"
+```
+Gunakan pesan commit yang jelas untuk mendeskripsikan perubahan yang telah dilakukan.
+
+### 6. **Mengirim (Push) Perubahan ke GitHub**
+Sekarang, Anda siap untuk mengirim (push) perubahan yang telah di-commit ke **GitHub**. Gunakan perintah berikut untuk mengirim commit pertama Anda:
+```bash
+git push -u origin main
+```
+- **`-u`**: Menentukan cabang default untuk **push** dan **pull** ke depannya.
+- **`origin`**: Merujuk ke remote repository (GitHub).
+- **`main`**: Cabang utama di repositori GitHub (dulu sering disebut `master`).
+
+Jika cabang utama di repositori GitHub Anda bernama selain `main`, pastikan untuk mengganti `main` dengan nama cabang yang sesuai.
+
+### 7. **Memverifikasi Perubahan di GitHub**
+Setelah berhasil melakukan **push**, buka repositori GitHub Anda di browser, dan Anda akan melihat bahwa file proyek Anda sudah ada di sana.
+
+---
+
+### Tips Tambahan:
+- **Cek Status Git**: Untuk memeriksa status perubahan pada file yang belum di-commit, gunakan perintah berikut:
+  ```bash
+  git status
+  ```
+
+- **Menggunakan Branch**: Jika Anda bekerja dalam tim atau ingin mengerjakan fitur baru, disarankan untuk membuat cabang (branch) baru dengan perintah:
+  ```bash
+  git checkout -b nama-branch
+  ```
+
+- **Menarik Perubahan dari GitHub (Pull)**: Sebelum melakukan push, pastikan Anda menarik (pull) perubahan terbaru dari repositori GitHub untuk menghindari konflik:
+  ```bash
+  git pull origin main
+  ```
+
+### Kesimpulan:
+Langkah-langkah di atas menjelaskan cara menginisialisasi repositori Git di proyek lokal, menambah file ke staging area, melakukan commit, dan mengirim perubahan ke repositori GitHub. Anda juga dapat mengelola cabang (branch) dan memeriksa status repositori Anda kapan saja.
+
 
 2. Buat Nama Project di heroku sesuai dari nama aplikasi:
 
